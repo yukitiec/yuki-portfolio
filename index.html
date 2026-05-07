@@ -298,40 +298,40 @@
       align-items: center;
       gap: 12px;
     }
-    
+
     .video-carousel-viewport {
       overflow: hidden;
       width: 100%;
     }
-    
+
     .video-carousel-track {
       display: flex;
       transition: transform 0.5s ease-in-out;
       will-change: transform;
     }
-    
+
     .video-slide {
-      min-width: 50%;
+      min-width: 100%;
       padding: 10px;
       flex-shrink: 0;
     }
-    
+
     .video-slide video {
       width: 100%;
-      height: 320px;
+      height: 420px;
       object-fit: cover;
       border-radius: 14px;
       background: #000;
       border: 1px solid var(--border);
     }
-    
+
     .video-caption {
       margin-top: 10px;
       font-size: 0.95rem;
       color: var(--muted);
       text-align: center;
     }
-    
+
     .carousel-btn {
       width: 46px;
       height: 46px;
@@ -346,7 +346,7 @@
       transition: 0.2s ease;
       flex-shrink: 0;
     }
-    
+
     .carousel-btn:hover {
       background: var(--accent-dark);
     }
@@ -374,10 +374,6 @@
         justify-content: center;
       }
 
-      .video-slide {
-        min-width: 100%;
-      }
-    
       .video-slide video {
         height: 240px;
       }
@@ -419,7 +415,6 @@
         </div>
 
         <div class="hero-card">
-          <!-- Replace src with your own image path -->
           <img src="self_photo.JPG" alt="Yuki Kawawaki" class="profile-photo">
           <h3 style="margin-bottom: 8px;">Yuki Kawawaki</h3>
           <p class="small">PhD in Mechanical Engineering<br>The University of Tokyo</p>
@@ -450,63 +445,63 @@
     </section>
 
     <section id="videos">
-    <div class="container">
-      <h2 class="section-title">Demonstration Videos</h2>
-      <div class="card">
-        <div class="video-carousel-wrapper">
-          <button class="carousel-btn left" id="videoPrev">&#10094;</button>
-  
-          <div class="video-carousel-viewport">
-            <div class="video-carousel-track" id="videoTrack">
-              <div class="video-slide">
-                <video controls preload="metadata" poster="">
-                  <source src="videos/high_speed_mot.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="video-caption">High-speed MOT</p>
-              </div>
-  
-              <div class="video-slide">
-                <video controls preload="metadata" poster="">
-                  <source src="videos/collision_avoidance.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="video-caption">Real-time Collision-free Motion Planning</p>
-              </div>
-  
-              <div class="video-slide">
-                <video controls preload="metadata" poster="">
-                  <source src="videos/hrc_catching.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="video-caption">Human-Robot Cooperative Catching</p>
-              </div>
-  
-              <div class="video-slide">
-                <video controls preload="metadata" poster="">
-                  <source src="videos/coarse_to_fine_catching.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="video-caption">Coarse-to-Fine Robot Catching</p>
-              </div>
-  
-              <div class="video-slide">
-                <video controls preload="metadata" poster="">
-                  <source src="videos/hrc_tidying.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="video-caption">Human-Robot Collaborative Tidying</p>
-              </div>
+      <div class="container">
+        <h2 class="section-title">Demonstration Videos</h2>
+        <div class="card">
+          <div class="video-carousel-wrapper">
+            <button class="carousel-btn left" id="videoPrev">&#10094;</button>
 
-              <div class="video-slide">
-                <video controls preload="metadata" poster="">
-                  <source src="videos/hrc_rope_turning.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="video-caption">Human-Robot Collaborative Rope Turning</p>
-              </div>
+            <div class="video-carousel-viewport">
+              <div class="video-carousel-track" id="videoTrack">
+                <div class="video-slide">
+                  <video controls preload="metadata" poster="">
+                    <source src="videos/high_speed_mot.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p class="video-caption">High-speed MOT</p>
+                </div>
 
-              <div class="video-slide">
+                <div class="video-slide">
+                  <video controls preload="metadata" poster="">
+                    <source src="videos/collision_avoidance.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p class="video-caption">Real-time Collision-free Motion Planning</p>
+                </div>
+
+                <div class="video-slide">
+                  <video controls preload="metadata" poster="">
+                    <source src="videos/hrc_catching.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p class="video-caption">Human-Robot Cooperative Catching</p>
+                </div>
+
+                <div class="video-slide">
+                  <video controls preload="metadata" poster="">
+                    <source src="videos/coarse_to_fine_catching.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p class="video-caption">Coarse-to-Fine Robot Catching</p>
+                </div>
+
+                <div class="video-slide">
+                  <video controls preload="metadata" poster="">
+                    <source src="videos/hrc_tidying.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p class="video-caption">Human-Robot Collaborative Tidying</p>
+                </div>
+
+                <div class="video-slide">
+                  <video controls preload="metadata" poster="">
+                    <source src="videos/hrc_rope_turning.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p class="video-caption">Human-Robot Collaborative Rope Turning</p>
+                </div>
+
+                <div class="video-slide">
                   <video controls preload="metadata" poster="">
                     <source src="videos/fes_arm_control.MP4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -514,13 +509,13 @@
                   <p class="video-caption">High-Speed Feedback Control for Electrical Stimulation</p>
                 </div>
               </div>
+            </div>
+
+            <button class="carousel-btn right" id="videoNext">&#10095;</button>
           </div>
-  
-          <button class="carousel-btn right" id="videoNext">&#10095;</button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <section id="education">
       <div class="container">
@@ -668,8 +663,8 @@
               <em>Scientific Reports</em>. (Under review)
             </div>
           </div>
+          -->
         </div>
-        -->
 
         <div class="card">
           <h3>International Conferences (2)</h3>
@@ -714,8 +709,8 @@
               <a href="http://www.hfr.iis.u-tokyo.ac.jp/research/HumanIntentRecognition/index-e.html" target="_blank">Demo</a>
             </div>
           </div>
+          -->
         </div>
-        -->
 
         <div class="card">
           <h3>Japanese Journal (1) and Conferences (7)</h3>
@@ -836,51 +831,35 @@
     const track = document.getElementById("videoTrack");
     const prevBtn = document.getElementById("videoPrev");
     const nextBtn = document.getElementById("videoNext");
-  
+
     let slides = Array.from(track.children);
     let currentIndex = 0;
-  
-    function getVisibleCount() {
-      return window.innerWidth <= 850 ? 1 : 2;
-    }
-  
+
     function updateCarousel() {
-      const visibleCount = getVisibleCount();
       const slideWidth = slides[0].getBoundingClientRect().width;
       track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
     }
-  
+
     function nextSlide() {
-      const visibleCount = getVisibleCount();
-      currentIndex += visibleCount;
-  
+      currentIndex += 1;
       if (currentIndex >= slides.length) {
         currentIndex = 0;
       }
-  
       updateCarousel();
     }
-  
+
     function prevSlide() {
-      const visibleCount = getVisibleCount();
-      currentIndex -= visibleCount;
-  
+      currentIndex -= 1;
       if (currentIndex < 0) {
-        const remainder = slides.length % visibleCount;
-        if (remainder === 0) {
-          currentIndex = slides.length - visibleCount;
-        } else {
-          currentIndex = slides.length - remainder;
-        }
+        currentIndex = slides.length - 1;
       }
-  
       updateCarousel();
     }
-  
+
     nextBtn.addEventListener("click", nextSlide);
     prevBtn.addEventListener("click", prevSlide);
     window.addEventListener("resize", updateCarousel);
-  
+
     updateCarousel();
   </script>
 
